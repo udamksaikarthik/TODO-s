@@ -1,8 +1,10 @@
 const form = document.getElementById("form");
 const inputText = document.getElementById("input");
 
-console.log(inputText);
+const btn = document.getElementById("btn");
+const nav = document.getElementById("nav");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-});
+function transfo() {
+    nav.classList.toggle("active");
+    btn.classList.toggle("active");
+}

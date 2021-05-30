@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #dddada;
 }
 
 h1 {
+    padding: 4rem;
     text-align: center;
     font-size: 5rem;
     color: rgb(140, 99, 182);
@@ -22,4 +28,44 @@ h1 {
 .input::placeholder {
     color: rgb(207, 192, 223);
     opacity: 0.4;
+}
+
+#btn {
+    background-color: rebeccapurple;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    transition: ease-in-out 2s;
+}
+
+#btn.active {
+    transform: translateX(-100px);
+}
+
+nav {
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    background-color: rebeccapurple;
+    top: 20px;
+    right: 20px;
+    height: 100vh;
+    transform: translateX(120%);
+    transition: ease-in-out 2s;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0.5rem;
+}
+
+nav.active {
+    transform: translateX(0);
 }
