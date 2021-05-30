@@ -39,13 +39,17 @@ h1 {
 }
 
 #btn.active {
-    transform: translateX(-120px);
+    transform: translateX(-155px);
 }
 
 nav {
+    background-image: url("Images/IMG-1847.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: fixed;
     color: white;
     font-size: 20px;
+    padding: 1rem;
     background-color: rebeccapurple;
     top: 0;
     right: 0;
@@ -57,9 +61,12 @@ nav {
 nav ul {
     text-align: center;
     list-style-type: none;
+    position: relative;
+    top: 230px;
 }
 
 nav ul li {
+    text-align: center;
     padding: 0.5rem;
 }
 
